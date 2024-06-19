@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "echo 'No build necessary'",
+    "build": "echo 'No build necessary'"
   },
   "devDependencies": {
     "webpack-cli": "^5.1.4"

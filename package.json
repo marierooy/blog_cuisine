@@ -1,7 +1,6 @@
 {
   "scripts": {
-    "build": "encore production",
-    "watch": "encore dev --watch"
+    "build": "echo 'No build necessary'",
   },
   "devDependencies": {
     "webpack-cli": "^5.1.4"

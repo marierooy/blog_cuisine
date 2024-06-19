@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development"
+    "build": "encore production",
+    "watch": "encore dev --watch"
   },
   "devDependencies": {
     "webpack-cli": "^5.1.4"

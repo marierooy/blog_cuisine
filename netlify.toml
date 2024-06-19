@@ -1,0 +1,5 @@
+[build]
+  command = "npm run build"  # Example build command, adjust as per your project
+
+[build.environment]
+  PHP_VERSION = "8.1"  # Specify the desired PHP version here

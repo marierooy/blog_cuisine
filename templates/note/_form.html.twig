@@ -1,0 +1,4 @@
+{{ form_start(formNote, {'action': path('app_cooking_blog_note', {'id': cooking_blog.id})}) }}
+    {{ form_widget(formNote) }}
+    <button class="btn">{{ button_label|default('Save') }}</button>
+{{ form_end(formNote) }}

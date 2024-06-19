@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}CookingBlog index{% endblock %}
+
+{% block body %}
+    <h1>CookingBlog</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for cooking_blog in cooking_blogs %}
+            <tr>
+                <td>{{ cooking_blog.id }}</td>
+                <td>{{ cooking_blog.title }}</td>
+                <td>{{ cooking_blog.description }}</td>
+                <td>
+                    <a href="{{ path('app_cooking_blog_show', {'id': cooking_blog.id}) }}">show</a>
+                    {% if app.user and app.user.getEmail()==cooking_blog.getUser().getEmail()%}
+                    <a href="{{ path('app_cooking_blog_edit', {'id': cooking_blog.id}) }}">edit</a>
+                    {% endif %}
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    {% if app.user %}
+    <a href="{{ path('app_cooking_blog_new') }}">Create new</a>
+    {% endif %}
+{% endblock %}

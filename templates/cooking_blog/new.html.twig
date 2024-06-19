@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New CookingBlog{% endblock %}
+
+{% block body %}
+    <h1>Create new CookingBlog</h1>
+
+    {{ include('cooking_blog/_form.html.twig') }}
+
+    <a href="{{ path('app_cooking_blog_index') }}">back to list</a>
+{% endblock %}

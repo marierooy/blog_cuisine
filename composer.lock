@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e887f0c2e1d7bb0dbbf50d03385cabb6",
+    "content-hash": "e16c6f7e7619c13ac767c5405c648c46",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -97,7 +97,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1 || ^8.0",
+                "php": "~7.1 || ^8.0"
             },
             "conflict": {
                 "doctrine/common": ">2.2,<2.4"
@@ -191,7 +191,7 @@
             },
             "require": {
                 "doctrine/deprecations": "^1",
-                "php": "^7.1 || ^8.0",
+                "php": "^8.1"
             },
             "require-dev": {
                 "doctrine/coding-standard": "^12",
@@ -277,7 +277,7 @@
             },
             "require": {
                 "doctrine/persistence": "^2.0 || ^3.0",
-                "php": "^8.1"
+                "php": "^7.1 || ^8.0"
             },
             "require-dev": {
                 "doctrine/coding-standard": "^9.0 || ^10.0",
@@ -9734,7 +9734,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=8.0",
+        "php": ">=8.1",
         "ext-ctype": "*",
         "ext-iconv": "*"
     },
